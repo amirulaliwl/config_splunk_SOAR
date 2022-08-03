@@ -1,0 +1,24 @@
+The Splunk App for SOAR Export requires that specific roles are added for the Splunk user setting up the Splunk App for SOAR Export.
+
+Add the phantom and ess_user roles to users on Splunk Enterprise 8.x
+Perform the following steps to add the phantom and ess_users roles to the Splunk user setting up the Splunk App for SOAR Export in Splunk Enterprise 8.x environments:
+
+Navigate to the Splunk platform instance where you installed the Splunk App for SOAR Export.
+In Splunk Web, select Settings > Roles.
+The phantom role includes Splunk Phantom read and write access and other permissions needed to run the Splunk App for SOAR Export. To set up Splunk Phantom capabilities, assign the phantom role to a user or a role. For example, if you want the admin role to have Splunk Phantom capabilities, do the following:
+Click Edit in the Actions column for the admin role.
+In the Inheritance tab, select the checkbox next to the phantom role. This will cause all users with the admin role to also inherit all privileges from the phantom role. If this admin user will be using adaptive response relay, you must also inherit the ess_user role.
+Click Save.
+
+
+Add the phantom and ess_users roles to users on Splunk Enterprise 7.3.x
+Perform the following steps to add the phantom and ess_users roles to the Splunk user setting up the Splunk App for SOAR Export in Splunk Enterprise 7.3.x environments:
+
+Navigate to the Splunk platform instance where you installed the Splunk App for SOAR Export.
+In Splunk Web, select Settings > Access controls.
+Select Roles.
+The phantom role includes Splunk Phantom read and write access and other permissions needed to run the Splunk App for SOAR Export. To set up Splunk Phantom capabilities, assign the phantom role to a user or a role. For example, if you want the admin role to always have Splunk Phantom capabilities, do the following:
+Click admin to edit the role.
+Click the Inheritance tab.
+Select the checkbox next to the phantom role. This will cause all users with the admin role to also inherit all privileges from the phantom role. If this admin user will be using adaptive response relay, you must also inherit the ess_user role.
+Click Save.
